@@ -7,7 +7,7 @@ Welcome to my personal Neovim setup! This configuration is built on the solid fo
 Simply run this command:
 
 ```sh
-git clone https://github.com/regalen76/config.nvim.git nvim
+git clone https://github.com/regalen76/config.nvim.git ~/.config/nvim
 ```
 
 ## ✨ Plugins
