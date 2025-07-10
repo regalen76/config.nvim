@@ -51,6 +51,7 @@ This configuration uses [`lazy.nvim`](https://github.com/folke/lazy.nvim) to man
 - **[kulala.nvim](https://github.com/mistweaverco/kulala.nvim)**: A REST client.
 - **[nvim-dbee](https://github.com/kndndrj/nvim-dbee)**: A database client.
 - **[rustaceanvim](https://github.com/mrcjkb/rustaceanvim)**: A plugin for Rust development.
+- **[typescript-tools.nvim](https://github.com/pmizio/typescript-tools.nvim)**: A plugin for Typescript development.
 - **[crates.nvim](https://github.com/Saecki/crates.nvim)**: Helps manage Rust crate dependencies.
 - **[codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim)**: An AI code companion.
 - **[mcphub.nvim](https://github.com/ravitemer/mcphub.nvim)**: A hub for sharing and discovering plugins.
