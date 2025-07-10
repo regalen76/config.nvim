@@ -19,6 +19,7 @@ return {
         graphql = { "prettierd" },
         lua = { "styluad" },
         python = { "isort", "black" },
+        go = { "goimports" }
       },
       format_on_save = {
         lsp_fallback = true,

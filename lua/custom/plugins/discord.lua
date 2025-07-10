@@ -4,7 +4,7 @@ return {
   opts = function()
     return {
       display = {
-        theme = 'default',
+        theme = 'catppuccin',
         flavor = 'dark',
       },
     }

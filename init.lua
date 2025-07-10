@@ -172,8 +172,8 @@ vim.o.splitbelow = true
 --  It is very similar to `vim.o` but offers an interface for conveniently interacting with tables.
 --   See `:help lua-options`
 --   and `:help lua-options-guide`
-vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- vim.o.list = true
+-- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
@@ -676,6 +676,25 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'gopls',
+        'bashls',
+        'black',
+        'chrome-debug-adapter',
+        'delve',
+        'eslint_d',
+        'goimports',
+        'html-lsp',
+        'isort',
+        'js-debug-adapter',
+        'jsonls',
+        'lua_ls',
+        'prettierd',
+        'prismals',
+        'pylint',
+        'rust_analyzer',
+        'svelte',
+        'tailwindcss',
+        'yamlls'
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -711,8 +730,6 @@ require('lazy').setup({
               -- certain features of an LSP (for example, turning off formatting for ts_ls)
               server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
               require('lspconfig')[server_name].setup(server)
-            else
-              vim.notify(server_name, vim.log.levels.INFO, { title = 'Test' })
             end
           end,
         },
